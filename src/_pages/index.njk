@@ -1,0 +1,17 @@
+---
+permalink: "index.html"
+---
+
+{% extends "../_layouts/_withHeaderAndNav.njk" %}
+
+{% block main %}
+    <div class="main">
+        <div class="main__headline">nicktaylor.dev<span>eloper</span></div>
+        <p>Coming soon</p>
+    </div>
+{% endblock main %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="/assets/main.css"/>
+{% endblock head %}
