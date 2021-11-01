@@ -60,11 +60,19 @@ body, .main {
 
   &__headline {
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2em;
 
     span {
       font-weight: 300;
       color: #BDF9E6;
+    }
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .main {
+    &__headline {
+      font-size: 3em;
     }
   }
 }
