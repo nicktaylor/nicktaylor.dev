@@ -1,5 +1,8 @@
+
 :root {
   font-size: 16px;
+  --one: #24FFAF;
+  --one-light: #BDF9E6;
 }
 
 
@@ -39,7 +42,7 @@
 html, body {
   font-family: 'wotfard', sans-serif;
   background: linear-gradient(111.21deg, #137380 0%, #7C1375 99.81%);
-  color: #24FFAF;
+  color: var(--one);
 }
 
 body {
@@ -64,8 +67,30 @@ body, .main {
 
     span {
       font-weight: 300;
-      color: #BDF9E6;
+      color: var(--one-light);
     }
+  }
+}
+
+.details {
+  font-weight: lighter;
+  margin-top: 1em;
+
+  p, a {
+    color: var(--one-light);
+  }
+
+  p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 0;
+    strong {
+      color: var(--one);
+    }
+  }
+  p + p {
+    padding-top: 0.5em;
+    margin-top: 0;
   }
 }
 
