@@ -1,4 +1,5 @@
 import '../css/index.scss';
+import './vr'
 
 window.addEventListener('DOMContentLoaded', () => {
   const setVH = () => {

@@ -10,6 +10,8 @@ module.exports = function(eleventyConfig) {
   // Copy src/compiled-assets to /assets
   eleventyConfig.addPassthroughCopy({ 'src/compiled-assets': 'assets' });
   // Copy all images
+  eleventyConfig.addPassthroughCopy('src/assets/textures');
+  eleventyConfig.addPassthroughCopy('src/assets/models');
   eleventyConfig.addPassthroughCopy('src/assets/fonts');
   eleventyConfig.addPassthroughCopy('src/images');
 

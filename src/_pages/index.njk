@@ -5,12 +5,14 @@ permalink: "index.html"
 {% extends "../_layouts/_withHeaderAndNav.njk" %}
 
 {% block main %}
-    <div class="main">
-        <div class="main__headline">nicktaylor.dev<span>eloper</span></div>
-        <div class="details">
-            <p><strong>Get in touch:</strong></p>
-            <p><a href="mailto:hello@nicktaylor.dev">hello@nicktaylor.dev</a></p>
-        </div>
+    <div class="main" id="app">
+        <div class="panel"></div>
+
+    </div>
+    <div class="main__headline">nicktaylor.dev<span>eloper</span></div>
+    <div class="details">
+        <p><strong>Get in touch:</strong></p>
+        <p><a href="mailto:hello@nicktaylor.dev">hello@nicktaylor.dev</a></p>
     </div>
 {% endblock main %}
 
@@ -21,5 +23,6 @@ permalink: "index.html"
 
 {% block scripts %}
     {{ super() }}
+    <script src="/assets/vendor.js"></script>
     <script src="/assets/main.js"></script>
 {% endblock %}
